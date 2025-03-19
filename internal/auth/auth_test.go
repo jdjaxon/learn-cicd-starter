@@ -48,7 +48,7 @@ func TestGetAPIKey(t *testing.T) {
 		"empty header": {
 			input:         mockEmptyHeader,
 			want:          "",
-			expectedError: "",
+			expectedError: "no authorization header included",
 		},
 	}
 
